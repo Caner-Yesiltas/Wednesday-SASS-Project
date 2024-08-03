@@ -1,6 +1,13 @@
+//*****************************************************
+//*   NAV
+//*****************************************************
+
+@use "../abstracts/mixins";
+@use "../abstracts/variable";
 .nav {
-  border: 2px solid red;
+  // border: 2px solid red;
   height: 10vh;
+  padding: 1rem;
 
   &__list {
     text-align: right;
@@ -15,16 +22,17 @@
   &__link {
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 1rem;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    font-family: variable.$font-family;
     font-weight: 500;
+    @include mixins.soft(0.5s);
 
     &:hover {
       color: blue;
     }
 
-    &__active {
-      color: darkorange;
+    &--active {
+      color: variable.$secondary-color;
     }
   }
 }
