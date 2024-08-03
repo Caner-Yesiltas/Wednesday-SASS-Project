@@ -1,3 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.nav {
+  border: 2px solid red;
+  height: 10vh;
+}
+.nav__list {
+  text-align: right;
+  list-style-type: none;
+}
+.nav__item {
+  display: inline;
+  padding: 1rem;
+}
+.nav__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+.nav__link:hover {
+  color: blue;
+}
+.nav__link__active {
+  color: darkorange;
+}
 
 /*# sourceMappingURL=style.css.map */
